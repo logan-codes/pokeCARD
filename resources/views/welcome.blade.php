@@ -36,7 +36,7 @@
         <div class="container mt-5 ">
 
             <div class="row ">
-                <div class="col-md-8">
+                <div class="col-md-6">
                     <div class="card text-center" style="color: black;width: 30rem;">
 
                         <div class="card-header">
@@ -57,6 +57,8 @@
                 <div class="col-md-4 mt-5 ">
 
                     <a href="javascript:location.reload()" class="d-flex justify-content-center btn btn-danger btn-lg pt-5 pb-5">Mostrar Pokemon</a>
+                    <br>
+                    <a href="" class="d-flex justify-content-center btn btn-warning btn-lg pt-5 pb-5">Guardar Pokemon</a>
 
                 </div>
             </div>

@@ -66,9 +66,15 @@ const componentePokemon = (poke) => {
 const statsPokemon = (poke) => {
     const staPokemon = document.getElementsByClassName("card-body");
 
-    const namePoke = document.createElement("h1");
+    const namePoke = document.createElement("input");
+    namePoke.classList.add("form-control")
     namePoke.classList.add("card-text")
-    namePoke.innerHTML= "Nombre: " + poke.name[0].toUpperCase() + poke.name.slice(1);
+    namePoke.setAttribute("name", "name");
+    namePoke.setAttribute("id", "name");
+    namePoke.setAttribute("value", poke.name[0].toUpperCase() + poke.name.slice(1));
+    namePoke.setAttribute("readonly", "");
+
+
 
     const row = document.createElement("div");
     row.classList.add("row")
@@ -77,41 +83,81 @@ const statsPokemon = (poke) => {
     col.classList.add("col-6")
     col.classList.add("mt-3")
 
-    const atkPokemon = document.createElement("h5")
+    const atkPokemon = document.createElement("input")
     atkPokemon.classList.add("card-text")
-    atkPokemon.innerHTML = "Ataque: "+ poke.attack
+    atkPokemon.classList.add("form-control")
+    atkPokemon.setAttribute("id", "attack");
+    atkPokemon.setAttribute("name", "attack");
+    atkPokemon.setAttribute("value", poke.attack);
+    atkPokemon.setAttribute("readonly", "");
 
-    const dfsPokemon = document.createElement("h5")
+
+    const dfsPokemon = document.createElement("input")
     dfsPokemon.classList.add("card-text")
-    dfsPokemon.innerHTML = "Defensa: " + poke.defense
+    dfsPokemon.classList.add("form-control")
+    dfsPokemon.setAttribute("name", "defense")
+    dfsPokemon.setAttribute("id", "defense");
+    dfsPokemon.setAttribute("value", poke.defense)
+    dfsPokemon.setAttribute("readonly", "")
 
-    const sp_atk = document.createElement("h5");
+
+    const sp_atk = document.createElement("input");
     sp_atk.classList.add("card-text")
-    sp_atk.innerHTML = "Atq. Esp: " + poke.sp_atk
+    sp_atk.classList.add("form-control")
+    sp_atk.setAttribute("name", "atk_esp")
+    sp_atk.setAttribute("id", "sp_atk");
+    sp_atk.setAttribute("value", poke.sp_atk);
+    sp_atk.setAttribute("readonly", "");
 
-    const sp_def = document.createElement("h5");
+
+    const sp_def = document.createElement("input");
     sp_def.classList.add("card-text")
-    sp_def.innerHTML = "Def. Esp: " + poke.sp_def
+    sp_def.classList.add("form-control")
+    sp_def.setAttribute("id", "sp_def");
+    sp_def.setAttribute("name", "def_esp");
+    sp_def.setAttribute("value", poke.sp_def);
+    sp_def.setAttribute("readonly", "");
+
 
     const col_1 = document.createElement("div")
     col_1.classList.add("col-6")
     col_1.classList.add("mt-3")
 
-    const numberPoke = document.createElement('h5')
+    const numberPoke = document.createElement('input')
     numberPoke.classList.add('card-text')
-    numberPoke.innerHTML = "No: " + `#${poke.id.toString().padStart(3, 0)}`;
+    numberPoke.classList.add('form-control')
+    numberPoke.setAttribute("id", "no_pokedex");
+    numberPoke.setAttribute("name", "id_pokedex");
+    numberPoke.setAttribute("value", `${poke.id.toString().padStart(3, 0)}`);
+    numberPoke.setAttribute("readonly", "");
 
-    const healt = document.createElement('h5')
+
+    const healt = document.createElement('input')
     healt.classList.add('card-text')
-    healt.innerHTML = "Salud: " + poke.hp;
+    healt.classList.add('form-control')
+    healt.setAttribute("id", "healt");
+    healt.setAttribute("name", "healt");
+    healt.setAttribute("value", poke.hp);
+    healt.setAttribute("readonly", "");
 
-    const hab = document.createElement("h5")
+
+    const hab = document.createElement("input")
     hab.classList.add("card-text")
-    hab.innerHTML = "Habilidad: " + poke.ability
+    hab.classList.add("form-control")
+    hab.setAttribute("id", "ability");
+    hab.setAttribute("name", "ability");
+    hab.setAttribute("value", poke.ability);
+    hab.setAttribute("readonly", "");
 
-    const vel = document.createElement("h5")
+
+    const vel = document.createElement("input")
     vel.classList.add("card-text")
-    vel.innerHTML = "Velocidad: " + poke.vel;
+    vel.classList.add("form-control")
+    vel.setAttribute("id", "velocity");
+    vel.setAttribute("name", "velocity");
+    vel.setAttribute("value", poke.vel);
+    vel.setAttribute("readonly", "");
+
 
 
 
@@ -129,6 +175,8 @@ const statsPokemon = (poke) => {
     col_1.appendChild(healt)
     col_1.appendChild(hab)
     col_1.appendChild(vel)
+
+
 
 
 
