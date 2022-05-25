@@ -38,18 +38,38 @@
         @csrf
 
 
+        <div class="card border-danger p-1" style="background-color: gray;">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6">
+                    <div class="card text-center" style="color: black;width: 30rem;">
 
-    <div class="row ">
-        <div class="col-md-6">
-            <div class="card text-center" style="color: black;width: 30rem;">
+                        <div class="card-header">
 
-                <div class="card-header">
+                        </div>
 
+
+
+                        <div class="card-body" style="background-color: antiquewhite;">
+
+
+
+
+                        </div>
+                    </div>
                 </div>
 
+                <div class="col-md-5 mt-5 ">
+
+                    <a href="javascript:location.reload()" class="d-flex justify-content-center btn btn-danger btn-lg pt-5 pb-5">Mostrar Pokemon</a>
+                    <br>
 
 
-                <div class="card-body" style="background-color: antiquewhite;">
+
+
+
+                        <input type="submit" class="d-flex justify-content-center btn btn-warning btn-lg pt-5 pb-5 form-control">
+
+
 
 
 
@@ -58,19 +78,7 @@
             </div>
         </div>
 
-        <div class="col-md-4 mt-5 ">
 
-            <a href="javascript:location.reload()" class="d-flex justify-content-center btn btn-danger btn-lg pt-5 pb-5">Mostrar Pokemon</a>
-            <br>
-
-            <input type="submit"
-            class="d-flex justify-content-center btn btn-warning btn-lg pt-5 pb-5">
-
-
-
-
-        </div>
-    </div>
 
 
     </form>

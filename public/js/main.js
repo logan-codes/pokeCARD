@@ -34,6 +34,7 @@ const dataPokemon = async (id) => {
 
         componentePokemon(poke);
         statsPokemon(poke);
+        test();
 
 
 
@@ -90,6 +91,7 @@ const statsPokemon = (poke) => {
     atkPokemon.setAttribute("name", "attack");
     atkPokemon.setAttribute("value", poke.attack);
     atkPokemon.setAttribute("readonly", "");
+    atkPokemon.setAttribute("type", "text");
 
 
     const dfsPokemon = document.createElement("input")
@@ -179,9 +181,6 @@ const statsPokemon = (poke) => {
 
 
 
-
-
-
 }
 
 
@@ -191,7 +190,6 @@ function actualizar(){
 }
 
 setInterval("actualizar()",30000);
-
 
 
 
